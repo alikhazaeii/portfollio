@@ -1,13 +1,12 @@
+import Hero from '@/components/Hero'
 import { Spotlight } from '@/components/ui/Spotlight'
 import React from 'react'
 
 export default function Home() {
   return (
-    <main className='flex relative justify-center items-center'>
-      <div className='w-full h-screen bg-black relative'>
-        <Spotlight className='left-96 ' fill='white'/>
-        <Spotlight className='left-52'fill='purple'/>
-        <Spotlight/>
+    <main className='flex relative justify-center items-center overflow-hidden mx-auto sm:px-10 px-5 bg-[#000319]'>
+      <div className='w-full max-w-7xl'>
+      <Hero/>
       </div>
     </main>
     
