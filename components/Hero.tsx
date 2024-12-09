@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/texteffect'
+import { TextGenerateEffect } from './ui/text-generate-effect'
 
 export default function Hero() {
   return (  
@@ -18,7 +18,7 @@ export default function Hero() {
             <h1 className='uppercase tracking-widest text-3xl  text-blue-100 max-w-80'>
               hi my name is ali
             </h1>
-            <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl capitalize' words='iam frontend developer from IR , Tehran'/>
+            <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl capitalize text-black opacity-0"' words='iam frontend developer from IR , Tehran' filter={false}/>
           </div>
         </div>
     </div>
