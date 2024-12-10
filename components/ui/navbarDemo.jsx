@@ -5,7 +5,6 @@ import {
   IconBrandLinkedin ,
   IconMail ,
   IconHome,
-  IconNewSection,
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
@@ -30,7 +29,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconMail  className="h-full w-full text-orange-400 " />
       ),
-      href: "#",
+      href: "mailto:ali.tradding021@gmail.com",
     },
     
     {
