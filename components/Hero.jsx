@@ -7,7 +7,7 @@ import { FloatingNav } from './ui/floating-navbar'
 
 export default function Hero() {
   return (  
-    <div className='pb-20 pt-36'>
+    <div className='pb-20 pt-36' id='home'>
         
 
       <div>
