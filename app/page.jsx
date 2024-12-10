@@ -2,9 +2,7 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 import RecentProject from '@/components/RecentProjects'
-import { Spotlight } from '@/components/ui/Spotlight'
-import { FloatingNav } from '@/components/ui/floating-navbar'
-
+import  Experiance  from "@/components/Experiance";
 
 
 export default function Home() {
@@ -13,6 +11,7 @@ export default function Home() {
       <div className='w-full max-w-7xl'>
       <Hero/>
       <RecentProject/>
+      <Experiance/>
       </div>
     </main>
     
