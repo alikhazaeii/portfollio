@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer";
 import Scroll from '@/components/ScrollX'
 export default function Home() {
   return (
-    <main className='flex relative justify-center items-center overflow-hidden mx-auto sm:px-10 px-5 bg-[#000319]'>
+    <main className='scroll-smooth flex relative justify-center items-center overflow-hidden mx-auto sm:px-10 px-5 bg-[#000319]' >
       <div className='w-full max-w-7xl'>
         <Scroll/>
       <Hero />

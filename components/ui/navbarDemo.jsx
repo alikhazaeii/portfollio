@@ -9,14 +9,7 @@ import {
 
 export function FloatingDockDemo() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-orange-400 " />
-      ),
-      href: "#home",
-    },
-
+  
     {
       title: "Linkedin",
       icon: (

@@ -4,7 +4,7 @@ import { Spotlight } from './ui/Spotlight'
 import  Texdesign  from "./ui/txtdesign";
 export default function Hero() {
   return (
-    <div className='pb-20 pt-36 ' id='home'>
+    <div className='pb-20 pt-36 '>
 
 
       <div>
@@ -14,12 +14,12 @@ export default function Hero() {
       </div>
       <div className="h-screen w-full dark:bg-[#000319] bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-wrap md:flex-nowrap items-center justify-center md:justify-start ">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#000319] bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <figure className='w-[30vw] h-[80vh] md:order-1 absolute -top-6 md:right-0 md:top-0'>
+        <figure className='w-[30vw] h-[80vh] md:order-1 absolute -top-[200px] md:right-0 md:top-0'>
           <img className='w-full h-full object-contain' src="/profile.png" alt="" />
         </figure>
-        <div className='relative flex justify-center my-20 z-10 -top-24  '>
+        <div className='relative flex justify-center my-20 z-10 -top-24   '>
           <div className='max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center '>
-            <h1 className='uppercase tracking-widest text-3xl  text-orange-400 max-w-80'>
+            <h1 className='uppercase tracking-widest text-3xl text-orange-400 max-w-80 backdrop-blur-xl md:backdrop-blur-none p-2'>
               About Me
             </h1>
             <Texdesign/>
