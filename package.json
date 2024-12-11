@@ -26,7 +26,8 @@
     "react-icons": "^5.4.0",
     "tailwind-merge": "^2.5.5",
     "three": "^0.171.0",
-    "three-globe": "^2.35.5"
+    "three-globe": "^2.35.5",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20",
