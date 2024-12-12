@@ -12,8 +12,8 @@ export default function Experiance() {
           <Button key={id} duration={Math.floor(Math.random()*5000 + 5000)} className='lg:w-[40vw] flex  text-start'>
           <div className='flex flex-wrap lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10'>
             <h2 className='text-orange-400 text-lg md:text-2xl m-5 font-bold'>{title}</h2>
-            <h3 className='text-yellow-100 text-sm md:text-xl py-2'>{dec1}</h3>
-            <h3 className='text-yellow-100 text-sm md:text-xl py-2'>{dec2}</h3>
+            <h3 className='dark:text-yellow-100 text-black text-sm md:text-xl py-2'>{dec1}</h3>
+            <h3 className='dark:text-yellow-100 text-black text-sm md:text-xl py-2'>{dec2}</h3>
               <div className='flex *:mx-2 *:text-3xl  my-5'>
                 {icons}
               </div>

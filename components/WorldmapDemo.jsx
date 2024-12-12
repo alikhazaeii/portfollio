@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    (<div className=" mb-5 dark:bg-[#000319] bg-white w-full">      
+    (<div className=" mb-5 dark:bg-[#000319] bg-[#dee4e7] w-full">      
       <div className="max-w-7xl mx-auto text-center">
         <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
           Remote{" "}
@@ -21,11 +21,7 @@ export function WorldMapDemo() {
             ))}
           </span>
         </p>
-        <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
-        </p>
+      
       </div>
       <WorldMap
         dots={[

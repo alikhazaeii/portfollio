@@ -13,14 +13,14 @@ export function FloatingDockDemo() {
     {
       title: "Linkedin",
       icon: (
-        <IconBrandLinkedin  className="h-full w-full text-orange-400 " />
+        <IconBrandLinkedin  className="h-full w-full dark:text-orange-400 text-black " />
       ),
       href: "https://www.linkedin.com/in/ali-khazaei021/",
     },
     {
       title: "E-mail",
       icon: (
-        <IconMail  className="h-full w-full text-orange-400 " />
+        <IconMail  className="h-full w-full dark:text-orange-400 text-black " />
       ),
       href: "mailto:ali.tradding021@gmail.com",
     },
@@ -28,7 +28,7 @@ export function FloatingDockDemo() {
     {
       title: "GitHub",
       icon: (
-        <IconBrandGithub className="h-full w-full text-orange-400 " />
+        <IconBrandGithub className="h-full w-full dark:text-orange-400 text-black " />
       ),
       href: "https://github.com/alikhazaeii",
     },

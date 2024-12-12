@@ -52,7 +52,7 @@ const FloatingDockMobile = ({
                 <Link
                   href={item.href}
                   key={item.title}
-                  className="h-10 w-10 rounded-full bg-[#000319] flex items-center justify-center">
+                  className="h-10 w-10 rounded-full dark:bg-[#000319] bg-white flex items-center justify-center">
                   <div className="h-4 w-4">{item.icon}</div>
                 </Link>
               </motion.div>
@@ -62,7 +62,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-[#000319] items-center justify-center">
+        className="h-10 w-10 rounded-full dark:bg-[#000319] bg-white items-center justify-center">
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>)
@@ -79,7 +79,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-[#000319] px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl dark:bg-[#000319] bg-white px-4 pb-3",
         className
       )}>
       {items.map((item) => (
@@ -140,14 +140,14 @@ function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-[#000319] flex items-center justify-center relative">
+        className="aspect-square rounded-full dark:bg-[#000319] bg-white flex items-center justify-center relative">
         <AnimatePresence>
           {hovered && (
             <motion.div
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-[#000319] dark:border-neutral-900 dark:text-white border-gray-200 text-orange-400 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs">
+              className="px-2 py-0.5 whitespace-pre rounded-md dark:bg-[#000319] bg-white dark:border-neutral-900 dark:text-white border-gray-200 text-orange-400 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs">
               {title}
             </motion.div>
           )}
