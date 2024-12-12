@@ -5,7 +5,7 @@ import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
 export default function Projects() {
   return (
-    <div>
+    <div id='projects'>
       <h2 className='w-full text-center text-5xl capitalize md:text-4xl'>
         A small selection of <br />
         <span className='text-orange-400 text-6xl'>recent projects</span>

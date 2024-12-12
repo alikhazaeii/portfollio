@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/moving-border";
 import { MyEx } from "@/data/MyExperience";
 export default function Experiance() {
   return (
-    <div className='py-10'>
+    <div className='py-10'id='experiance'>
       <h2 className='w-full text-center text-5xl capitalize md:text-4xl'>
         My  <span className='text-orange-400 text-6xl'>Technical Skills</span>
       </h2>

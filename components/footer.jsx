@@ -4,7 +4,7 @@ import { BackgroundBeams } from "./ui/background-beams";
 import { FloatingDockDemo } from "@/components/ui/navbarDemo"
 export function Footer() {
   return (
-    (<div
+    (<div id="contact"
       className="h-[30rem] w-full rounded-md bg-[#000319] relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4 absolute top-2">
         <h1
