@@ -59,11 +59,15 @@ export const FloatingNav = ({
             className={cn(
               "relative dark:text-orange-400 items-center flex space-x-1 text-neutral-600 dark:hover:text-orange-500 hover:text-orange-400"
             )}>
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="block sm:hidden ">{navItem.icon}</span>
+            <span className="hidden sm:block text-lg">{navItem.name}</span>
           </Link>
         ))}
-       <img className="w-[80px] h-[40px] object-cover rounded-full" src="/navlogo2.png" alt="" />
+        <div className="w-[80px] h-[40px] relative rounded-full overflow-hidden *:absolute">
+        <img className=" object-cover w-full h-full dark:opacity-0 dark:-z-10" src="/navlogo2.png" alt="" />
+        <img className=" object-cover w-full h-full dark:opacity-100 opacity-0" src="/nvlogo.jpg" alt="" />
+        </div>
+       
       </motion.div>
     </AnimatePresence>)
   );

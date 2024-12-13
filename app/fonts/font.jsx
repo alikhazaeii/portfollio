@@ -1,13 +1,14 @@
-import { Open_Sans,Roboto } from 'next/font/google'
+import { Inconsolata , EB_Garamond } from 'next/font/google'
 
- export const openSans = Open_Sans({
+
+
+export const inconsolata = Inconsolata({
   subsets:['latin'],
-  weight:['400'],
-  style:['normal','italic'],
-  
-})
-export const roboto = Roboto({
-  subsets:['latin'],
-  weight:['900'],
+  weight:['300'],
 })
 
+export const eb = EB_Garamond({
+  subsets:['latin'],
+  weight:['500'],
+  style:['italic']
+})

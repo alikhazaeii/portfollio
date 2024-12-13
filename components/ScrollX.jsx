@@ -9,7 +9,7 @@ export default function Scroll() {
   });
 
   return (
-      <motion.div className="fixed top-0 left-0 origin-left h-[4px] w-full dark:bg-orange-400 bg-black z-50" style={{ scaleX }} />
+      <motion.div className="fixed top-0 left-0 origin-left h-[5px] w-full dark:bg-orange-400 bg-black z-50" style={{ scaleX }} />
     
   );
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import { FloatingNav } from "../components/ui/floating-navbar";
 import { IconBrandAdobePremier ,IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { eb } from "@/app/fonts/font";
 export function FloatingNavDemo() {
   const navItems = [
     {
@@ -28,7 +29,7 @@ export function FloatingNavDemo() {
     },
   ];
   return (
-    (<div className="absolute">
+    (<div className={`absolute ${eb.className} `}>
       <FloatingNav navItems={navItems} />
     </div>)
   );
