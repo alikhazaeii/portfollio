@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    (<div className=" mb-5 dark:bg-[#000319] bg-[#dee4e7] w-full">      
+    (<div className=" mb-5  dark:bg-[#000319] bg-[#dee4e7] w-full">      
       <div className="max-w-7xl mx-auto text-center">
-        <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
+        <p className="font-bold text-xl md:text-6xl dark:text-white text-black">
           Remote{" "}
           <span className="text-orange-400">
             {"Connectivity".split("").map((word, idx) => (

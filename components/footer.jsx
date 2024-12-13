@@ -17,7 +17,7 @@ export function Footer() {
         </p>
     
       </div>
-      <div className="relative z-20">
+      <div className="relative z-50">
       <FloatingDockDemo />
 
       </div>

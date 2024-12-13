@@ -4,7 +4,6 @@ import {
   IconBrandGithub,
   IconBrandLinkedin ,
   IconMail ,
-  IconHome,
 } from "@tabler/icons-react";
 
 export function FloatingDockDemo() {
