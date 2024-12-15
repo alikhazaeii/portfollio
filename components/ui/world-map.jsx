@@ -1,4 +1,4 @@
-"use client";;
+import { useEffect, useState } from "react";
 import { useRef } from "react";
 import { motion } from "motion/react";
 import DottedMap from "dotted-map";
@@ -13,12 +13,21 @@ export function WorldMap({
   const map = new DottedMap({ height: 100, grid: "diagonal" });
 
   const { theme } = useTheme();
+  const [backgroundColor, setBackgroundColor] = useState("#dee4e7");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setBackgroundColor("#000319");
+    } else {
+      setBackgroundColor("#dee4e7");
+    }
+  }, [theme]);
 
   const svgMap = map.getSVG({
     radius: 0.22,
     color: theme === "dark" ? "#000ffa" : "gray",
     shape: "circle",
-    backgroundColor: theme === "dark" ? "#000319" : "#dee4e7",
+    backgroundColor: backgroundColor,
   });
 
   const projectPoint = (lat, lng) => {
@@ -27,18 +36,15 @@ export function WorldMap({
     return { x, y };
   };
 
-  const createCurvedPath = (
-    start,
-    end
-  ) => {
+  const createCurvedPath = (start, end) => {
     const midX = (start.x + end.x) / 2;
     const midY = Math.min(start.y, end.y) - 50;
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
 
   return (
-    (<div
-      className="w-full md:aspect-[3/1] dark:bg-[#000319] bg-[#dee4e7] rounded-lg  relative font-sans my-5">
+    <div
+      className="w-full md:aspect-[3/1] dark:bg-[#000319] bg-[#dee4e7] rounded-lg relative font-sans my-5">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
@@ -54,7 +60,7 @@ export function WorldMap({
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           return (
-            (<g key={`path-group-${i}`}>
+            <g key={`path-group-${i}`}>
               <motion.path
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
@@ -72,7 +78,7 @@ export function WorldMap({
                   ease: "easeOut",
                 }}
                 key={`start-upper-${i}`}></motion.path>
-            </g>)
+            </g>
           );
         })}
 
@@ -146,6 +152,6 @@ export function WorldMap({
           </g>
         ))}
       </svg>
-    </div>)
+    </div>
   );
 }

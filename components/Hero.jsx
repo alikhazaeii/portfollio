@@ -25,7 +25,7 @@ export default function Hero() {
             </h1>
             <Texdesign/>
             
-            <p className={`${inconsolata.className} text-start md:tracking-wider sm:text-sm md:text-lg lg:text-2xl my-5 capitalize`}> from <strong className='text-3xl text-orange-400'>Iran, Tehran</strong>   27 years old, I have a deep passion for web development and creating visually appealing, user-friendly interfaces.
+            <p className={`${inconsolata.className} text-start md:tracking-wider sm:text-sm md:text-lg lg:text-3xl my-5 capitalize`}> from <strong className='text-4xl text-orange-400'>Iran, Tehran</strong>   27 years old, I have a deep passion for web development and creating visually appealing, user-friendly interfaces.
 
               My expertise lies in delivering unique digital experiences using modern tools and technologies. I constantly strive to combine creativity and technical knowledge to produce high-quality projects.
 
