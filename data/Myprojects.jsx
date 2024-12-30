@@ -13,7 +13,32 @@ import { FiFramer } from "react-icons/fi";
 
 
 
-export const MyProjects =[{
+export const MyProjects =[
+  {
+    id:'7',
+    tilte : 'Parallax Site',
+    des:'The language Tools Works in React , Vite & Responsive with tailwind',
+    img:'parallax.png',
+    link:'https://prallaxdemo.vercel.app/',
+    iconsLists:( <> 
+    <FaReact color='skyblue'/> <TbBrandVite color="skyblue" /> <IoLogoJavascript color="yellow"/>
+    <RiTailwindCssFill color='skyblue' />
+  
+    </>)
+  },
+  {
+    id:'6',
+    tilte : 'alopeyk',
+    des:'The Responsive Demo with Nextjs & tailwind',
+    img:'alopeyk.png',
+    link:'https://alopeyk.vercel.app/',
+    iconsLists:( <> 
+    <FaReact color='skyblue'/> <RiNextjsFill color="white" /> <IoLogoJavascript color="yellow"/>
+    <RiTailwindCssFill color='skyblue' />
+  
+    </>)
+  },
+  {
   id:'1',
   tilte : 'todoList',
   des:'The language Tools Works in React , Next',

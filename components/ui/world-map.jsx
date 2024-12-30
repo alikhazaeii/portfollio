@@ -44,14 +44,14 @@ export function WorldMap({
 
   return (
     <div
-      className="w-full md:aspect-[3/1] dark:bg-[#000319] bg-[#dee4e7] rounded-lg relative font-sans my-5">
+      className="w-full md:aspect-[3/1] dark:bg-[#000319] bg-[#dee4e7] rounded-lg relative font-sans my-5" suppressHydrationWarning>
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
         alt="world map"
         height="495"
         width="1056"
-        draggable={false} />
+        draggable={false} suppressHydrationWarning/>
       <svg
         ref={svgRef}
         viewBox="0 0 800 400"

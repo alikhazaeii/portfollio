@@ -16,7 +16,7 @@ export default function Projects() {
             <PinContainer title={tilte} href={link}>
               <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[20vh] lg:h-[40vh] mb-10'>
                 <figure className='relative w-full h-full overflow-hidden flex justify-center items-center lg:rounded-3xl dark:bg-gray-900 bg-sky-500'>
-                  <img className='absolute z-10  lg:w-[90%] lg:h-[90%] lg:top-10 lg:rotate-3' src={img} alt="" />
+                  <img className='absolute z-10  lg:w-[90%] lg:h-[90%] lg:top-10 lg:rotate-3' src={img} alt="" loading='lazy' />
                 </figure>
               </div>
               <h2 className={`font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-orange-400 capitalize  ${eb.className} `}>

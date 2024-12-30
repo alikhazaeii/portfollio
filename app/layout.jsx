@@ -13,7 +13,7 @@ export default function RootLayout({
   children,
 }) {
   return (
-    <html lang="en" className="scroll-smooth cursor-none">
+    <html lang="en" className="scroll-smooth cursor-none" suppressHydrationWarning>
       <body
       >
         <ThemeProvider
