@@ -5,8 +5,8 @@ import { motion } from "motion/react";
 
 export function WorldMapDemo() {
   return (
-    (<div className =" mb-5 w-full dark:bg-[#000319] bg-[#dee4e7] " >      
-      <div className="max-w-7xl mx-auto text-center dark:bg-[#000319] bg-[#dee4e7]">
+    (<div className =" mb-5 w-full dark:bg-black bg-[#dee4e7] relative z-20 " >      
+      <div className="max-w-7xl mx-auto text-center dark:bg-black bg-[#dee4e7]">
         <p className={`${inconsolata.className} font-bold text-3xl md:text-6xl dark:text-white text-black `}>
           Remote{" "}
           <span className={`text-orange-400 ${eb.className} `}>
