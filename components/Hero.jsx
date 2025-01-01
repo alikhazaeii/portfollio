@@ -15,8 +15,8 @@ export default function Hero() {
       </div>
       <div className="h-screen w-full dark:bg-[#000319] bg-[#dee4e7]   dark:bg-dot-white/[0.5] bg-dot-black/[0.8] relative flex flex-wrap md:flex-nowrap items-center justify-center md:justify-start ">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#000319] bg-[#dee4e7] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <figure className='w-[50vw]  h-[1100px]  absolute -top-[100px] md:right-0 md:top-0 order-2  '>
-          <img className='w-full h-full object-cover absolute ' src="/profileimg2.png " alt="" />
+        <figure className='w-[50vw]  h-[1100px] z-20 absolute -top-[100px] md:right-0 md:top-0  order-2  '>
+          <img className='w-full h-[110%] object-cover absolute ' src="/profileimg2.png " alt="" />
         </figure>
         <div className='relative flex justify-center my-20 z-10 -top-24  order-1 '>
           <div className='max-w-[90vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center '>
